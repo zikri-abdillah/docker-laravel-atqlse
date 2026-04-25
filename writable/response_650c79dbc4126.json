@@ -1,0 +1,9 @@
+code = 200
+reason = OK
+Cache-Control: no-store, max-age=0, no-cache,  no-store, max-age=0, no-cache
+Content-Type:  application/json; charset=UTF-8
+Date:  Thu, 21 Sep 2023 17:14:03 GMT
+Server:  Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4
+X-Powered-By:  PHP/8.2.4
+Content-Length:  307
+body = {"header":{"nib":"0000000000000","npwp":"111111111111111","nama_perusahaan":"PERCOBAAN JAYA","no_izin":"03.ET-04.23.0000","kd_izin":"01012A9","status_izin":"01","tgl_izin":"2023-09-05","tgl_awal":"2023-09-05","tgl_akhir":"2023-10-15"},"kepatuhan":{"kode":"A01","keterangan":"Request Sukses"},"komoditas":[]}

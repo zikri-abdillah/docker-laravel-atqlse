@@ -1,0 +1,30 @@
+{
+    "code": "00",
+    "text": "Sukses",
+    "type": "success",
+    "data": {
+        "kode": 200,
+        "keterangan": "Ok",
+        "data": {
+            "nama_moda_transplb": "GLOVIS DAYLIGHT - MPMI TEST",
+            "nama_tertanggung": "TRAFIGURA,PT - MPMI TEST",
+            "npwp": "",
+            "jenis_barang": 1,
+            "volume_rencana": 85000,
+            "satuan_rencana": "TNE",
+            "neg_asal": "",
+            "neg_tujuan": "",
+            "plb_asal": "",
+            "plb_tujuan": "",
+            "plb_muat": "",
+            "no_sertifikat": "098.1010.101.2020.000183.00",
+            "nilai_premi": 65267400000,
+            "tgl_berangkat": "2020-03-11",
+            "tgl_insert": "2020-03-20",
+            "tgl_survey": "2023-07-28",
+            "hasil_survey": 1,
+            "tipe_transaksi": 2
+        }
+    },
+    "msg": "Success"
+}
