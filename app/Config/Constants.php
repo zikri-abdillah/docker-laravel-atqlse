@@ -93,10 +93,21 @@ define('EVENT_PRIORITY_NORMAL', 100);
  */
 define('EVENT_PRIORITY_HIGH', 10);
 
-$base_URL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
-$base_URL .= "://" . $_SERVER['HTTP_HOST'];
-if(str_contains($_SERVER['HTTP_HOST'], 'localhost') || str_contains($_SERVER['HTTP_HOST'], '127.0.0.1'))
-	$base_URL .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+// $base_URL = ((isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == "on") ? "https" : "http");
+// // $base_URL .= "://" . $_SERVER['HTTP_HOST'];
+// $base_URL .= "://" . ($_SERVER['HTTP_HOST'] ?? 'localhost:8001');
+// $base_URL .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
+
+$base_URL = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on') ? 'https' : 'http';
+
+$host = $_SERVER['HTTP_HOST'] ?? 'localhost:8087/';
+$script = $_SERVER['SCRIPT_NAME'] ?? '';
+
+$base_URL .= '://' . $host;
+$base_URL .= str_replace(basename($script), '', $script);
+
+// if(str_contains($_SERVER['HTTP_HOST'], 'localhost') || str_contains($_SERVER['HTTP_HOST'], '127.0.0.1'))
+// 	$base_URL .= str_replace(basename($_SERVER['SCRIPT_NAME']), "", $_SERVER['SCRIPT_NAME']);
 define('BASE_URL', $base_URL);
 
 define('PREFIX_NUMBERING','ATQ');
