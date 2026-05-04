@@ -16,7 +16,7 @@
 		      	      <input type="hidden" id="login_token" name="login_token" value="{{ session('sess_login_token') }}">
                   
                   <div class="mb-3">
-                    <label for="uname" class="form-label">Username</label>
+                    <label for="uname" class="form-label">Username TEST</label>
 		      		      <input type="text" class="form-control" id="uname" name="uname" placeholder="Username" required autocomplete="off"> 
                   </div>
 
