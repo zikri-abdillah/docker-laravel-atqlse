@@ -19,5 +19,6 @@ jobs:
           script: |
             cd /root/docker-laravel-atqlse/app
             git pull origin main
+            cd /root/docker-laravel-atqlse/docker
             docker-compose down
             docker-compose up -d --build
